@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/snooker/static/css/main.4dd89c67.css",
+    "main.js": "/snooker/static/js/main.e20336bb.js",
+    "static/js/437.00d20faa.chunk.js": "/snooker/static/js/437.00d20faa.chunk.js",
+    "static/js/206.b23ecc49.chunk.js": "/snooker/static/js/206.b23ecc49.chunk.js",
+    "index.html": "/snooker/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.4dd89c67.css",
+    "static/js/main.e20336bb.js"
+  ]
+}
