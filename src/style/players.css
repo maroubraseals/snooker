@@ -1,0 +1,103 @@
+/* players.css */
+
+.players-container {
+    padding: 30px;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  
+  .form-title {
+    margin-bottom: 15px;
+  }
+  
+  .players-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .form-label {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  
+  .form-input,
+  .form-checkbox {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-input {
+    width: calc(100% - 20px); /* Adjust the width as needed */
+    margin-bottom: 10px;
+  }
+  
+  .form-checkbox {
+    margin-bottom: 10px;
+    transform: scale(1.5); /* Increase the size of the checkbox */
+  }
+  
+  .submit-button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .players-list-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .players-table {
+    border-collapse: collapse;
+}
+
+.table-header{
+    padding: 10px; 
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.table-data {
+    padding: 10px; 
+    font-size: 1.1em;
+    font-weight: 500;
+
+}
+
+  
+  .table-header {
+    background-color: #f2f2f2;
+  }
+  
+  .table-row:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table-row:hover {
+    background-color: #ddd;
+  }
+  
+  .table-data:first-child,
+  .table-header:first-child {
+    border-left: 1px solid #ddd;
+  }
+  
+  .table-data:last-child,
+  .table-header:last-child {
+    border-right: 1px solid #ddd;
+  }
+  
+  .table-checkbox {
+    margin: auto;
+  }
+  

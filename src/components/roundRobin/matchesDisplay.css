@@ -1,0 +1,217 @@
+/* General styles */
+.matches-display {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h2, h3 {
+    color: #333;
+  }
+  
+  .loading {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .draws-select-container {
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .show-more-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .draw-details {
+    margin-top: 20px;
+  }
+  
+  .group-results, .group-table, .knockout-draw {
+    margin-bottom: 20px;
+  }
+  /* Apply CSS Grid layout to display two tables per row on larger screens */
+.standings-tables {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+  gap: 20px; /* Space between tables */
+  width: 100%; /* Ensure the grid takes up the full width */
+  box-sizing: border-box;
+}
+/* Style the standings table */
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.standings-table th,
+.standings-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  background-color: #a2a2a2;
+  color: rgb(255, 255, 255);
+  font:bolder;
+}
+
+.standings-table th {
+  background-color: #676767;
+  font-weight: bold;
+}
+
+.matches-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.matches-table th,
+.matches-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+  
+
+
+
+  .date-break-row {
+  background-color: #93cfb4 !important ;/* Light gray background */
+  text-align: center;
+}
+
+.date-break-text {
+  font-weight: bold;
+  color: #333; /* Darker text color */
+  text-align: center;
+
+}
+  
+  /* Match container with multi-color shading */
+  .match-container {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #d1d1d1, #7a7a7a);
+  }
+  
+  .round-container {
+    margin: 0 10px;
+  }
+  
+  .bracket-container {
+    display: flex;
+    flex-direction: row; /* Display rounds in a row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+  
+  /* Player info with alternating colors */
+  .player-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .player {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .player:nth-child(odd) {
+    background-color: #e8e8e8;
+  }
+  
+  .player:nth-child(even) {
+    background-color: #f1f8e9;
+  }
+  
+  .player-name, .player-handicap, .player-score {
+    margin-left: 10px;
+  }
+  
+  /* VS separator */
+  .vs {
+    text-align: center;
+    color: #00796b;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .matches-display {
+      margin: 10px;
+    }
+  
+    h2, h3 {
+      font-size: 1.2em;
+    }
+  
+    .loading, .error {
+      font-size: 16px;
+    }
+  
+    select, .show-more-button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .standings-table th, .matches-table th, .standings-table td, .matches-table td {
+      padding: 6px;
+    }
+  
+    .player {
+      padding: 8px;
+    }
+  
+    .match-container {
+      padding: 8px;
+    }
+
+    .standings-tables {
+      grid-template-columns: 1fr; /* One column per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2, h3 {
+      font-size: 1em;
+    }
+  
+    .loading, .error {
+      font-size: 14px;
+    }
+  
+    select, .show-more-button {
+      padding: 6px;
+      font-size: 12px;
+    }
+  
+    .standings-table th, .matches-table th, .standings-table td, .matches-table td {
+      padding: 4px;
+      font-size: 12px;
+    }
+
+    .player {
+      padding: 3px;
+    }
+  
+    .match-container {
+      padding: 3px;
+    }
+
+    .knockout-draw{
+        font-size: 8px; /* Adjust font size for mobile phones */
+    }
+  }
+  
